@@ -16,8 +16,6 @@
 
 This is a ground-up implementation of a **5-stage pipelined RISC-V (RV32I) processor**, built module-by-module in Verilog. It doesn't stop at the textbook single-cycle design — it pipelines instruction execution across five stages and handles the two problems that come with that: **hazards** and **data dependencies**, solved here with a dedicated hazard detection unit and a forwarding unit.
 
-> **Note:** this repo is currently named `Single_Cycle_RISCV_Processor`, but the implementation inside is a full pipelined datapath (see `pipeline_datapath.v`, the `IF_ID`/`ID_EX`/`EX_MEM`/`MEM_WB` pipeline registers, and the hazard/forwarding units below). Worth renaming to reflect what's actually built — this README describes the real architecture.
-
 ---
 
 ## 🏗️ Pipeline Architecture
